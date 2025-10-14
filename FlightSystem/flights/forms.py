@@ -11,8 +11,6 @@ class AirportRouteForm(forms.ModelForm):
             'duration': forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Duration in minutes'}),
         }
 
-from django import forms
-
 class SearchForm(forms.Form):
     direction = forms.ChoiceField(
         choices=[('Left', 'Left'), ('Right', 'Right')],
@@ -24,4 +22,3 @@ class SearchForm(forms.Form):
 class ShortestRouteForm(forms.Form):
     source = forms.CharField(label="Source Airport Code")
     destination = forms.CharField(label="Destination Airport Code")
-
