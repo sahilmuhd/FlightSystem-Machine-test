@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Routes System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h1 class="text-center mb-4">✈️ Flight Routes System</h1>
+
+    <div class="list-group">
+        <a href="{% url 'add_route' %}" class="list-group-item list-group-item-action">➕ Add Airport Route</a>
+        <a href="{% url 'find_nth' %}" class="list-group-item list-group-item-action">🔍 Find Nth Left/Right Node</a>
+        <a href="{% url 'longest' %}" class="list-group-item list-group-item-action">⏱ Find Longest Node</a>
+        <a href="{% url 'shortest' %}" class="list-group-item list-group-item-action">🛩 Find Shortest Node Between Two Airports</a>
+    </div>
+</div>
+</body>
+</html>
